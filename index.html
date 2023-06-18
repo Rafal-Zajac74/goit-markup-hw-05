@@ -19,7 +19,9 @@
     <nav class="menu-nav">
         <ul class="submenu-nav">
             <li><a href="index.html"><p class="logo-web-header">Web<span class="logo-studio-black">Studio</span></p></a></li>
-            <li class="link-agency"><a href="#">Agencja</a></li>
+            <li class="link-agency"><a href="./index.html">Agencja</a>
+                <div class="underscore"></div>
+            </li>
             <li class="link-portfolio"><a href="./portfolio.html">Portfolio</a></li>
             <li class="link-contact"><a href="#">Kontakt</a></li>
         </ul>
@@ -47,7 +49,7 @@
             <div class="container">
                  <div class="heading-box">
                     <h1 class="heading-main">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-                    <button class="button-main" type="button">Zamów usługe</button>
+                    <button class="button-main" type="button" data-modal-open>Zamów usługe</button>
                 </div>
             </div>
         </div>
@@ -99,12 +101,27 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="what-we-do-section">
             <h2 class="heading-section">Czym się zajmujemy</h2>
             <ul class="images-what-we-do">
-                <li><img src="./images/What-we-do/What-we-do1.jpg" alt="Pisanie kodu" width="370" height="294"></li>
-                <li><img src="./images/What-we-do/What-we-do2.jpg" alt="laptop i smartfon" width="370" height="294"></li>
-                <li><img src="./images/What-we-do/What-we-do3.jpg" alt="tablet" width="370" height="294"></li>
+                <li>
+                    <img src="./images/What-we-do/What-we-do1.jpg" alt="Pisanie kodu" width="370" height="294">
+                    <div class="div-sign">
+                        <p class="sign-img">APLIKACJE KOMPUTEROWE</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/What-we-do/What-we-do2.jpg" alt="laptop i smartfon" width="370" height="294">
+                    <div class="div-sign">
+                        <p class="sign-img">APLIKACJE MOBILNE</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/What-we-do/What-we-do3.jpg" alt="tablet" width="370" height="294">
+                    <div class="div-sign">
+                        <p class="sign-img">ROZWIĄZANIA GRAFICZNE</p>
+                    </div>
+                </li>
             </ul>
         </section>
         <section class="our-team-bacground">
@@ -340,5 +357,17 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+                <a href="">
+                    <svg class="icon-vector">
+                        <use width="11" height="11" href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                </a>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
